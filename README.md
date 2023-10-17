@@ -5,8 +5,8 @@ A minimalist blog template that provides Markdown format blogging and display an
 ### index.html
 ![](https://github.com/Catslin/Minimize/blob/main/public/show/index.png)
 
-### articles.html
-![](https://github.com/Catslin/Minimize/blob/main/public/show/articles.png)
+### show.html
+![](https://github.com/Catslin/Minimize/blob/main/public/show/show.png)
 
 ### video.html
 ![](https://github.com/Catslin/Minimize/blob/main/public/show/video.png)
