@@ -1,0 +1,21 @@
+.icontainer ul,
+.icontainer ul li {
+  margin: 20px;
+  border-bottom: 3px solid white;
+}
+
+.iarticles {
+  width: 80%;
+}
+
+.isearch {
+  position: absolute;
+  width: 20%;
+  top: 10px;
+  right: 0;
+}
+.isearch > input {
+  border-bottom: 3px solid black;
+  width: 100%;
+  position: fixed;
+}
