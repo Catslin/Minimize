@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>new</title>
+    <link rel="stylesheet" href="/dist/index.css" />
+    <script src="/dist/index.min.js"></script>
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/new.css">
 </head>
@@ -17,13 +19,16 @@
         </div>
         
 
-        <div type="text" id="markdown">
+        <div type="text" class="context">
             <div class="input">
                 <input type="text" name="" id="title" placeholder="TITLE">
                 <input type="text" name="" id="summary" placeholder="SUMMARY">
             </div>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="mk">
+                <div id="vditor" class="vditor"></div>
+            </div>
         </div>
     </div>
 </body>
+<script src="../js/new.js"></script>
 </html>

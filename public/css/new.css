@@ -7,6 +7,11 @@
   height: 100vh;
   flex-direction: column;
 }
+
+a {
+  font-size: 20px;
+  background-color: whitesmoke;
+}
 .ncontainer .input {
   width: 100%;
   display: flex;
@@ -23,22 +28,25 @@
   flex-wrap: wrap;
   width: 80%;
 }
-.ncontainer #markdown {
+.ncontainer .context {
   border: 2px solid black;
   width: 100%;
-  min-height: 500px;
   flex: 1;
   background: white;
-  position: relative;
-  left: 0;
+  overflow: hidden;
 }
 
-.ncontainer #markdown textarea {
+.ncontainer .context .mk {
+  min-height: 70%;
   margin-top: 20px;
   border: none;
   top: 10%;
 }
 
-span {
-  display: block;
+#vditor {
+  width: 100%;
+  display: flex;
+}
+.vditor-toolbar {
+  display: none;
 }
