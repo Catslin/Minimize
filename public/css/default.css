@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+/*  */
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 5px;
+}
