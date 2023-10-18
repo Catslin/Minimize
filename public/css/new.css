@@ -1,0 +1,30 @@
+.ncontainer {
+  justify-content: flex-start;
+  width: 60%;
+  height: 100vh;
+  flex-direction: column;
+}
+.ncontainer .input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.ncontainer .input input {
+  right: 0;
+  width: 40%;
+  border-bottom: 3px solid black;
+  margin: 20px;
+}
+.function {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.ncontainer #markdown {
+  width: 100%;
+  min-height: 500px;
+  flex: 1;
+  background: white;
+  position: relative;
+  left: 0;
+}
