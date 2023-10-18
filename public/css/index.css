@@ -21,8 +21,7 @@
   font-family: 'Concert One', cursive;
   margin: 5px;
 }
-.icontainer ul,
-.icontainer ul li {
+.icontainer ul {
   margin: 20px;
   border-bottom: 3px solid white;
 }
