@@ -4,10 +4,15 @@
 }
 
 a {
+  border: 1px dotted red;
   padding: 5px;
   margin: 5px;
   color: red;
   text-decoration: none;
+}
+
+h2 {
+  border: none;
 }
 
 button {

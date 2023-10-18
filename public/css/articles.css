@@ -27,7 +27,6 @@
 }
 .tag a {
   display: inline-block;
-  background-color: whitesmoke;
 }
 
 .card {
@@ -40,4 +39,8 @@
 .card span {
   display: block;
   margin: 10px;
+}
+
+.card h2 a {
+  border: none;
 }
