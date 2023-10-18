@@ -10,3 +10,6 @@ A minimalist blog template that provides Markdown format blogging and display an
 
 ### video.html
 ![](https://github.com/Catslin/Minimize/blob/main/public/show/video.png)
+
+### new.html
+![](https://github.com/Catslin/Minimize/blob/main/public/show/new.png)
