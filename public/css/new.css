@@ -29,7 +29,14 @@
   position: relative;
   left: 0;
 }
-textarea {
+.ncontainer #markdown .input img {
+  flex: 0.5;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 5;
+}
+.ncontainer #markdown textarea {
+  margin-top: 20px;
   border: none;
   top: 10%;
 }
