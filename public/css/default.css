@@ -4,8 +4,40 @@
 }
 
 a {
+  padding: 5px;
+  margin: 5px;
   color: red;
   text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  border-bottom: 3px solid black;
+  outline: none;
+}
+
+input {
+  color: black;
+  background: transparent;
+  border: none;
+  outline: none;
+  height: 30px;
+  font-size: 20px;
+}
+
+textarea {
+  padding: 20px;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+  max-width: 100%;
+  bottom: 0;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 
 ::-webkit-scrollbar {
@@ -13,12 +45,4 @@ a {
 }
 ::-webkit-scrollbar-thumb {
   background-color: black;
-}
-
-/*  */
-
-.container {
-  width: 80%;
-  margin: auto;
-  padding: 5px;
 }

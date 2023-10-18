@@ -1,0 +1,19 @@
+.scontainer {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.scontainer .show {
+  padding: 20px;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+}
+h3 {
+  margin: 10px;
+}
+p {
+  font-size: 18px;
+  margin-top: 20px;
+}

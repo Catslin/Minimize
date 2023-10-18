@@ -1,0 +1,44 @@
+.container {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80%;
+  height: 100vh;
+  flex-direction: column;
+}
+.ncontainer .input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.ncontainer .input input {
+  right: 0;
+  width: 50%;
+  border-bottom: 3px solid black;
+  margin: 50px;
+}
+.function {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.ncontainer #markdown {
+  border: 2px solid black;
+  width: 100%;
+  min-height: 500px;
+  flex: 1;
+  background: white;
+  position: relative;
+  left: 0;
+}
+
+.ncontainer #markdown textarea {
+  margin-top: 20px;
+  border: none;
+  top: 10%;
+}
+
+span {
+  display: block;
+}
