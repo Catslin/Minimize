@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  margin: 10px;
+  /*  */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; /* 设置最多显示的行数 */
+  overflow: hidden; /* 隐藏超出行数的部分 */
+  text-overflow: ellipsis; /* 当内容超出行数时，显示省略号 */
+}
+
+p {
+  font-size: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* 设置最多显示的行数 */
+  overflow: hidden; /* 隐藏超出行数的部分 */
+  text-overflow: ellipsis; /* 当内容超出行数时，显示省略号 */
+}
+
+.home-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-nav {
+  width: 80%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 16px;
+  overflow: auto;
+}
+.home-nav * {
+  display: inline-block;
+}
+.home-nav img {
+  border-radius: 50%;
+  width: 50px;
+}
+.home-nav input {
+  background: transparent;
+  outline: none;
+  border: none;
+  width: auto;
+  border-bottom: 3px solid black;
+  margin-left: auto; /* 将input元素推到最右边 */
+}
+.home-nav input::placeholder {
+  color: black;
+}
+
+.card {
+  margin: auto;
+  width: 80%;
+  margin: 5px;
+  font-size: 25px;
+  border: 2px black dashed;
+  -moz-box-shadow: 0px 1px 5px #333333;
+  -webkit-box-shadow: 0px 1px 5px #333333;
+  box-shadow: 0px 1px 5px #333333;
+}
+.card * {
+  margin: 10px;
+}
