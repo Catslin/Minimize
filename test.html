@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>选择Markdown文件并保存</title>
+  <style>
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>选择Markdown文件并保存</h1>
+  <button id="uploadBtn">选择文件</button>
+  <input type="file" id="fileInput" accept=".md" style="display: none;">
+  <div id="fileContent"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    const uploadBtn = document.getElementById("uploadBtn");
+    const fileInput = document.getElementById("fileInput");
+    const fileContent = document.getElementById("fileContent");
+
+    uploadBtn.addEventListener("click", function() {
+      fileInput.click();
+    });
+
+    fileInput.addEventListener("change", function() {
+      const file = fileInput.files[0];
+      const reader = new FileReader();
+      reader.onloadend = function(e) {
+        const arr = (new Uint8Array(e.target.result)).subarray(0, 4);
+        let header = "";
+        for (let i = 0; i < arr.length; i++) {
+          header += arr[i].toString(16);
+        }
+        const fileType = getFileType(header);
+        if (fileType === "text/markdown") {
+          const reader2 = new FileReader();
+          reader2.onload = function(e2) {
+            const markdownContent = e2.target.result;
+            const fileName = file.name;
+            const submitTime = new Date().toLocaleString();
+
+            // 调用保存函数
+            saveArticleAndRedirect(fileName, submitTime, markdownContent);
+          };
+          reader2.readAsText(file);
+        } else {
+          alert("请选择一个Markdown文件");
+        }
+      };
+      reader.readAsArrayBuffer(file);
+    });
+
+    function getFileType(header) {
+      switch (header) {
+        case "25504446":
+          return "application/pdf";
+        case "504b34":
+          return "application/zip";
+        case "52617221":
+          return "application/rar";
+        case "1f8b08":
+          return "application/gzip";
+        case "ffd8ffe0":
+        case "ffd8ffe1":
+        case "ffd8ffe2":
+          return "image/jpeg";
+        case "47494638":
+          return "image/gif";
+        case "89504e47":
+          return "image/png";
+        case "49492a00":
+        case "4d4d002a":
+          return "image/tiff";
+        default:
+          return "unknown";
+      }
+    }
+
+    function saveArticleAndRedirect(fileName, submitTime, markdownContent) {
+      fetch("/save", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          fileName: fileName,
+          submitTime: submitTime,
+          markdownContent: markdownContent
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          const htmlContent = marked(markdownContent);
+          fileContent.innerHTML = `
+            <h2>文件名: ${fileName}</h2>
+            <p>提交时间: ${submitTime}</p>
+            ${htmlContent}
+          `;
+        } else {
+          alert("保存失败");
+        }
+      })
+      .catch(error => {
+        console.error("保存出错:", error);
+        alert("保存出错");
+      });
+    }
+  </script>
+</body>
+</html>
