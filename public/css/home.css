@@ -25,6 +25,7 @@ p {
 }
 
 .home-container {
+  position: relative;
   transition: color 2s ease;
   margin: auto;
   width: 80%;
@@ -39,7 +40,7 @@ p {
 }
 
 .home-nav {
-  width: 100%;
+  width: 80%;
   text-align: center;
   display: flex;
   align-items: center;
@@ -47,6 +48,9 @@ p {
   font-size: 16px;
   overflow: auto;
   border-bottom: 2px black dashed;
+  position: fixed;
+  background: white;
+  top: 0;
 
 }
 .home-nav * {
@@ -68,7 +72,10 @@ img {
 .home-nav input::placeholder {
   color: black;
 }
-
+.card-container {
+  height: 15vh;
+  width: 90%;
+}
 .card {
   margin: auto;
   width: 90%;
