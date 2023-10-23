@@ -4,11 +4,11 @@
   /* background-color: whitesmoke; */
 }
 a {
-    outline: none;
-    color: red;
-    text-decoration: none;
-    display: inline-block;
-    margin: 5px;
+  outline: none;
+  color: red;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
 }
 /* 隐藏滚动条 */
 ::-webkit-scrollbar {
@@ -58,14 +58,14 @@ a {
   display: flex;
 }
 .left {
-    width: 20%;
-    padding: 10px;
-    text-align: center;
-    border-right: 2px solid black;
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+  border-right: 2px solid black;
 }
 .right {
-    width: 60%;
-    padding: 10px;
+  width: 60%;
+  padding: 10px;
 }
 .article * {
   margin: 10px;
@@ -90,7 +90,7 @@ a {
 }
 
 .tags {
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
