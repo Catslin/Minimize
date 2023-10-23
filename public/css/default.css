@@ -9,6 +9,12 @@ a {
   text-decoration: none;
   display: inline-block;
   margin: 5px;
+  /*  */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* 设置最多显示的行数 */
+  overflow: hidden; /* 隐藏超出行数的部分 */
+  text-overflow: ellipsis; /* 当内容超出行数时，显示省略号 */
 }
 /* 隐藏滚动条 */
 ::-webkit-scrollbar {
@@ -16,7 +22,7 @@ a {
 }
 /* 设置滚动条滑块样式 */
 ::-webkit-scrollbar-thumb {
-  background-color: #555; /* 设置滚动条滑块颜色 */
+  background-color: red; /* 设置滚动条滑块颜色 */
 }
 
 .home-container {
@@ -31,7 +37,6 @@ a {
 .introduction {
   width: 5%;
   /* width: 20%; */
-  height: 100vh;
   transition: width 1s ease;
   display: flex;
   flex-direction: column;
@@ -44,7 +49,6 @@ a {
 }
 .articles {
   width: 90%;
-  height: 100vh;
   flex-direction: column;
   overflow: auto;
   display: flex;
@@ -54,8 +58,8 @@ a {
   margin: auto;
   width: 90%;
   margin: 10px;
-  background-color: whitesmoke;
   display: flex;
+  border-bottom: dashed 2px gray;
 }
 .left {
   width: 20%;
@@ -66,6 +70,14 @@ a {
 .right {
   width: 60%;
   padding: 10px;
+}
+.right-context {
+  /*  */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5; /* 设置最多显示的行数 */
+  overflow: hidden; /* 隐藏超出行数的部分 */
+  text-overflow: ellipsis; /* 当内容超出行数时，显示省略号 */
 }
 .article * {
   margin: 10px;
@@ -93,4 +105,32 @@ a {
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
+}
+
+
+@media (max-width: 768px) {
+    .articles {
+        width: 100%;
+    }
+    .home-container {
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+        border-right: none;
+    }
+    .right {
+        display: none;
+    }
+
+    .avata{
+        width: 20%;
+        position: relative;
+    }
+
+    .introduction {
+        border-bottom: red dotted 3px;
+        width: 100%;
+        flex-direction: row;
+    }
 }
