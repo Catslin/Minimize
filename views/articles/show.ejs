@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show</title>
+    <link rel="stylesheet" href="../css/show.css" />
+  </head>
+
+  <body>
+    <div class="show-container">
+      <div class="left">
+        <h1><%= article.title %></h1>
+        <span><%= article.createdAt.toLocaleDateString() %></span>
+        <div class="link-container">
+          <a href="/">#Home</a
+          ><a href="/articles/edit/<%= article.id %>">#edit</a>
+        </div>
+      </div>
+      <div class="right">
+        <p><%- article.sanitizedHtml %></p>
+      </div>
+    </div>
+  </body>
+</html>

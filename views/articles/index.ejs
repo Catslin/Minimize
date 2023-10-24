@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/default.css" />
+  </head>
+  <body>
+    <div class="home-container">
+      <div class="introduction">
+        <div class="avatar">
+          <img src="/image/icon.jpg" alt="" />
+        </div>
+        <div class="information">
+          <span
+            >Allocate four digits for the year part of a date: a new millennium
+            is commg.—— David Martin</span
+          >
+          <span
+            ><ul>
+              <li>
+                <h4>TodoList</h4>
+                <ul>
+                  build this build
+                </ul>
+                <ul>
+                  create a chat app
+                </ul>
+                <ul>
+                  build a video player
+                </ul>
+                <ul>
+                  build a music player
+                </ul>
+              </li>
+            </ul>
+          </span>
+        </div>
+        <div class="tags">
+          <a href="/articles/new">#new</a>
+          <a href="">#javascript</a>
+          <a href="">#node</a>
+          <a href="">#book</a>
+          <a href="">#book</a>
+          <a href="">#javascriptbook</a>
+        </div>
+      </div>
+      <div class="articles">
+        <% articles.forEach(article => { %>
+        <div class="article">
+          <div class="left">
+            <h2><a href="articles/<%= article.slug %>"><%= article.title %></a></h2>
+            <span><%= article.createdAt.toLocaleDateString() %></span>
+          </div>
+          <div class="right">
+            <span class="right-context">
+              <%= article.description %>
+            </span>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+  </body>
+  <script src="/js/home.js"></script>
+</html>
