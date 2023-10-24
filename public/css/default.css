@@ -66,6 +66,8 @@ a {
   padding: 10px;
   text-align: center;
   border-right: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
 }
 .right {
   width: 60%;
