@@ -45,6 +45,9 @@ button {
   width: 20%;
   flex-wrap: wrap;
 }
+.left * {
+  margin: 10px;
+}
 .right {
   margin-top: 5%;
   width: 70%;
