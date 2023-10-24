@@ -11,6 +11,17 @@ a {
   display: inline-block;
   color: red;
 }
+form {
+  display: inline-block;
+}
+button {
+  border: none;
+  color: red;
+  outline: none;
+  background: transparent;
+  font-size: 18px;
+  margin: 10px;
+}
 
 /* 隐藏滚动条 */
 ::-webkit-scrollbar {
@@ -30,11 +41,11 @@ a {
   align-items: center;
 }
 .left {
-  width: 10%;
+  width: 20%;
   flex-wrap: wrap;
 }
 .right {
-  width: 80%;
+  width: 70%;
   height: 100%;
   font-size: 18px;
   overflow: auto;

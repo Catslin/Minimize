@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Steamed Bun Invasion</title>
+    <link rel="icon" href="/image/包子.svg" sizes="32x32" type="image/png" />
     <link rel="stylesheet" href="css/default.css" />
   </head>
   <body>
@@ -14,8 +15,9 @@
         </div>
         <div class="information">
           <span
-            >Allocate four digits for the year part of a date: a new millennium
-            is commg.—— David Martin</span
+            >Some of us get dipped in flat, some in satin, some in gloss. But
+            every once in a while you find someone who's iridescent, and when
+            you do, nothing will ever compare.</span
           >
           <span
             ><ul>
@@ -50,13 +52,13 @@
         <% articles.forEach(article => { %>
         <div class="article">
           <div class="left">
-            <h2><a href="articles/<%= article.slug %>"><%= article.title %></a></h2>
+            <h2>
+              <a href="articles/<%= article.slug %>"><%= article.title %></a>
+            </h2>
             <span><%= article.createdAt.toLocaleDateString() %></span>
           </div>
           <div class="right">
-            <span class="right-context">
-              <%= article.description %>
-            </span>
+            <span class="right-context"> <%= article.description %> </span>
           </div>
         </div>
         <% }) %>

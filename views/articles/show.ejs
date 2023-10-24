@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Show</title>
+    <title>Steamed Bun Invasion</title>
+    <link rel="icon" href="/image/包子.svg" sizes="32x32" type="image/png">
     <link rel="stylesheet" href="../css/show.css" />
   </head>
 
@@ -15,6 +16,12 @@
         <div class="link-container">
           <a href="/">#Home</a
           ><a href="/articles/edit/<%= article.id %>">#edit</a>
+          <!-- <a href="/articles/<%= article.id %>?_method=DELETE" method="POST">#delete</a> -->
+
+          <form action="/articles/<%= article.id %>?_method=DELETE" method="POST" class="d-inline">
+            <button type="submit" class="btn btn-danger">#delete</button>
+          </form>
+
         </div>
       </div>
       <div class="right">
