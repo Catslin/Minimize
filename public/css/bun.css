@@ -34,6 +34,7 @@ h6 {
   width: 80%;
   overflow: auto;
   padding: 10px;
+  border: white 3px solid;
 }
 .show img {
     width: 90%;
