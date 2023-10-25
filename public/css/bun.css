@@ -43,10 +43,9 @@ h6 {
   padding: 10px;
   overflow: auto;
   font-family: 'Do Hyeon', sans-serif;
+  font-size: 18px;
 }
-.show img {
-  width: 90%;
-}
+
 .show::-webkit-scrollbar {
   width: 5px;
 }
@@ -57,4 +56,13 @@ h6 {
 
 .tags a {
   text-decoration: none;
+}
+
+.card {
+  padding: 10px;
+  border-bottom: 3px white solid;
+}
+
+.card h5 {
+  color: #A8D8B9;
 }
