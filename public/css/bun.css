@@ -1,11 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(218, 201, 171);
+  background-color: #336774;
 }
 
 hr {
   size: 20px;
+}
+
+a {
+  color: #BF6766;
 }
 
 .container {
@@ -22,27 +26,35 @@ h3,
 h4,
 h5,
 h6 {
-  color: blue;
-  font-family: "Cabin Sketch", cursive;
+  color: #51A8DD;
+  font-family: 'Righteous', cursive;
 }
 
 .person {
   width: 20%;
-  color: white;
+  color: #0C0C0C;
   font-family: "Gloria Hallelujah", cursive;
+}
+
+.person span {
+  color: #FFB11B;
 }
 
 .show {
   margin: 10px;
-  font-size: 18px;
   width: 80%;
   overflow: auto;
   padding: 10px;
   overflow: auto;
+  color: #787878;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.show p,ul,li{
+  font-size: 18px;
 }
 
 .default {
-  font-family: 'Do Hyeon', sans-serif;
   width: 100%;
 }
 
@@ -63,4 +75,12 @@ h6 {
 }
 .show::-webkit-scrollbar-thumb:active {
   background: rgb(68, 68, 68);
+}
+
+
+.tags a {
+  text-decoration: none;
+}
+.tags span {
+  color: #BC9F77;
 }

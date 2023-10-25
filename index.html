@@ -1,68 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Steamed Bun Invasion</title>
-    <link
-      rel="icon"
-      href="./public/image/Steamed Bun Invasion.svg"
-      type="image/x-icon"
-      sizes="32x32"
-    />
-    <link href="https://fonts.googlefonts.cn/css?family=Do+Hyeon|Gloria+Hallelujah" rel="stylesheet">
-    <link rel="stylesheet" href="./public/css/bun.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="person">
-        <img src="./public/image/icon.png" alt="" width="80px" />
-        <span>CatslinSama's blog</span>
-        <hr
-          style="filter: alpha(opacity=100, finishopacity=0, style=3)"
-          width="80%"
-          color="#987cb9"
-          size="3"
-        />
-        <p>
-          A programmer who is learning, but when you see this page, you should
-          know that his learning is definitely not very good.
-        </p>
-        <hr />
-        <div class="tags">
-          Something about /
-          <br />
-          <a
-            href=""
-            onclick="loadContent('./public/articles/2023-10-25/test.html', event)"
-            >#Code Notes</a
-          >
-          <a href="">#reading notes</a>
-          <a href="">#thoughts</a>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
-        </div>
-      </div>
-      <div class="show">
-        <div class="default">
-          <h3>about this page</h3>
-          <p>
-            Hello, this is a personal blog page I built on gitub. This page uses
-            html, css, and javascript. You can
-            <a
-              href="https://github.com/CatslinSama/CatslinSama.github.io"
-              target="_blank"
-              >find it here</a
-            >
-            <br>
-            
-          </p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Steamed Bun Invasion</title>
+  <link rel="icon" href="./public/image/Steamed Bun Invasion.svg" type="image/x-icon" sizes="32x32" />
+  <link href="https://fonts.googlefonts.cn/css?family=Do+Hyeon|Gloria+Hallelujah|Righteous" rel="stylesheet">
+  <link rel="stylesheet" href="./public/css/bun.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="person">
+      <img src="./public/image/icon.png" alt="" width="80px" />
+      <span>CatslinSama's blog</span>
+      <hr style="filter: alpha(opacity=100, finishopacity=0, style=3)" width="80%" color="#987cb9" size="3" />
+      <p>
+        A programmer who is learning, but when you see this page, you should
+        know that his learning is definitely not very good.
+      </p>
+      <hr />
+      <div class="tags">
+        <span>Something about /</span>
+        <br />
+        <a href="" onclick="loadContent('./public/page/structure.html', event)"">#Webstructure</a>
+        <br>
+        <a href="" onclick="loadContent('./public/page/CodePage.html', event)">#Code</a>
+        <a href="" onclick="loadContent('./public/page/thoughts.html', event)">#thoughts</a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
       </div>
     </div>
-  </body>
-  <script src="./public/js/page.js"></script>
+    <div class="show">
+      <div class="default">
+        <h2>about this page</h2>
+        <p>
+          Hello, this is a personal blog page I built on gitub. This page uses html, css, and javascript. You can
+          <a href="https://github.com/CatslinSama/CatslinSama.github.io" target="_blank">find it here</a>
+          <br>
+          In plan3, the persistence blog of node and mongodb has been completed.
+        <pre>npm install >> npm run start</pre>
+        but now I feel that markdown is actually a degraded version of html, and adding animation effects
+        and processing routing makes me very depressed (maybe blogs don't need so many things), so I came up with this
+        website
+        <br>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./public/js/page.js"></script>
+
 </html>
