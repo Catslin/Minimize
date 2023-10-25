@@ -4,10 +4,6 @@ body {
   background-color: #336774;
 }
 
-hr {
-  size: 20px;
-}
-
 a {
   color:#F4A7B9;
 }
@@ -42,40 +38,22 @@ h6 {
 
 .show {
   margin: 10px;
-  width: 80%;
+  width: 100%;
   overflow: auto;
   padding: 10px;
   overflow: auto;
   font-family: 'Do Hyeon', sans-serif;
 }
-
-.show p,ul,li{
-  font-size: 18px;
-}
-
-.default {
-  width: 100%;
-}
-
 .show img {
   width: 90%;
 }
 .show::-webkit-scrollbar {
-  width: 10px;
-}
-.show::-webkit-scrollbar-track {
-  background: rgb(179, 177, 177);
-}
-.show::-webkit-scrollbar-thumb {
-  background: rgb(136, 136, 136);
-}
-.show::-webkit-scrollbar-thumb:hover {
-  background: rgb(100, 100, 100);
-}
-.show::-webkit-scrollbar-thumb:active {
-  background: rgb(68, 68, 68);
+  width: 5px;
 }
 
+.show::-webkit-scrollbar-thumb {
+  background: #DAC9A6;
+}
 
 .tags a {
   text-decoration: none;

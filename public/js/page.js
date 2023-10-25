@@ -10,3 +10,8 @@ loadContent = (fileName, event) => {
   xhttp.open("GET", fileName, true);
   xhttp.send();
 };
+
+
+window.addEventListener('DOMContentLoaded', function(event) {
+  loadContent('./public/page/default.html',event);
+});
