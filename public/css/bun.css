@@ -33,7 +33,7 @@ h6 {
 .person {
   width: 20%;
   color: #0C0C0C;
-  font-family: "Gloria Hallelujah", cursive;
+  font-family: "Gloria Hallelujah", cursive, STXinwei;
 }
 
 .person span {
@@ -46,7 +46,7 @@ h6 {
   overflow: auto;
   padding: 10px;
   overflow: auto;
-  font-family: 'Do Hyeon', sans-serif, '华文新魏';
+  font-family: 'Do Hyeon', sans-serif, STXinwei;
   font-size: 18px;
 }
 
