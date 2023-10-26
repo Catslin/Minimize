@@ -66,6 +66,7 @@ h6 {
 .card {
   padding: 10px;
   border-bottom: 3px white solid;
+  margin: 10px;
 }
 
 .card h5 {
