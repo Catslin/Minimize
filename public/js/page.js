@@ -9,9 +9,18 @@ loadContent = (fileName, event) => {
   event.preventDefault();
   xhttp.open("GET", fileName, true);
   xhttp.send();
+
+  // 存储当前加载的页面文件名
+  localStorage.setItem("currentPage", fileName);
 };
 
-
 window.addEventListener('DOMContentLoaded', function(event) {
-  loadContent('./public/page/default.html',event);
+  // 检查localStorage中是否有存储的页面文件名
+  var currentPage = localStorage.getItem("currentPage");
+
+  if (currentPage) {
+    loadContent(currentPage, event);
+  } else {
+    loadContent('./public/page/default.html', event);
+  }
 });
