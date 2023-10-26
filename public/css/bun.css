@@ -67,8 +67,11 @@ h6 {
   padding: 10px;
   border-bottom: 3px white solid;
   margin: 10px;
+  display: flex;
 }
-
+.card span {
+  padding: 10px;
+}
 .card h5 {
   color: #A8D8B9;
 }
