@@ -5,19 +5,24 @@
 .context::-webkit-scrollbar-thumb {
     background: #DAC9A6;
 }
+
 body {
     display: flex;
     height: 100vh;
     overflow: hidden;
     justify-content: space-around;
+    font-family: 'Do Hyeon', sans-serif;
 }
+
 .card h3 {
     color: #A8D8B9;
 }
+
 .contentsTag {
     padding: 10px;
     width: 20%;
 }
+
 .contentsTag a {
     text-decoration: none;
 }
