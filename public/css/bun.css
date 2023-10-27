@@ -67,7 +67,9 @@ h6 {
   padding: 10px;
   border-bottom: 3px white solid;
   margin: 10px;
-  display: flex;
+}
+.card img {
+  width: 50%;
 }
 .card span {
   padding: 10px;
