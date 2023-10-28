@@ -11,74 +11,9 @@
     <div class="contentsTag">
         <h2>Build  <a href="../../../../index.html">own</a> reactJS</h2>
         <h4><a href="#basicConcept">Part0 :: basicconcept.</a></h4>
-        <h4><a href="#createElement">Part1 :: creatElement Function.</a></h4>
     </div>
     <div class="context">
-        <div class="card">
-            <h3 id="basicConcept">basic concept.</h3>
-            <a href="https://pomb.us/build-your-own-react/" >this course in here</a>
-            in top build a div as root
-            <pre>
-                const element = [h1 title="foo"]Hello [/h1]
-                const container = document.getElementById("root")
-                ReactDOM.render(element, container)
-            </pre>
-            Create a React element, get the DOM element with id "root", and use the ReactDOM.render() method to render the
-            React element into the container
-            but in fection
-            <pre>
-                const element = React.createElement(
-                    "h1",
-                    { title: "foo" },
-                    "Hello"
-                )
-            </pre>
-            It just puts all the parameters into an object and returns
-            <pre>
-                const element = [h1 title="foo"]Hello [/h1]
-            </pre>
-            in this element has two property object
-            <pre>
-                const element = {
-                    type: "h1",
-                    props: {
-                        title: "foo",
-                        children: "Hello",
-                    },
-                }
-            </pre>
-            type and props,and now we hava same as application as before
-            <pre>
-                const element = {
-                    type: "h1",
-                    props: {
-                      title: "foo",
-                      children: "Hello",
-                    },
-                  }
-                  const container = document.getElementById("root")
-                  const node = document.createElement(element.type)
-                  node["title"] = element.props.title
-                  const text = document.createTextNode("")
-                  text["nodeValue"] = element.props.children
-                  node.appendChild(text)
-                  container.appendChild(node)
-            </pre>
-            The createElement method in React and the naming of {type, props} are React's internal conventions and are used
-            to represent the structure of React elements.
-    
-            Parameters to the createElement method include the element's type (e.g. "h1") and attribute object (e.g. {
-            title: "foo" }), as well as optional child elements. This method is closer to the expression of JSX syntax.
-    
-            The naming method of {type, props} represents the type and attributes of the element more intuitively. type
-            represents the type of element, such as "h1", and props is an object containing element attributes, including
-            attributes such as title and children (or array attributes)..
-            <br>
-        </div>
-        <div class="card">
-            <h3 id="createElement">First One creatElement Function</h3>
-            Create object props with type and children
-        </div>
+        articles Context
     </div>
 </body>
 </html>
