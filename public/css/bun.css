@@ -36,6 +36,9 @@ body {
   background: #535953;
 }
 
+.tags {
+  height: 30%;
+}
 .tags a {
   text-decoration: none;
 }
