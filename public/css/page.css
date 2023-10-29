@@ -3,7 +3,7 @@
 }
 
 .context::-webkit-scrollbar-thumb {
-    background: #DAC9A6;
+    background: #535953;
 }
 
 body {
@@ -11,10 +11,6 @@ body {
     height: 100vh;
     overflow: hidden;
     justify-content: space-around;
-}
-
-.card h3 {
-    color: #A8D8B9;
 }
 
 .contentsTag {
