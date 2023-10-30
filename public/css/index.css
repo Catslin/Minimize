@@ -8,6 +8,9 @@ body {
 hr {
     filter: alpha(opacity=100, finishopacity=0, style=3),
 }
+date {
+    color: #51A8DD;
+}
 
 a {
     display: inline-block;
