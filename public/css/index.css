@@ -2,8 +2,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #1C1C1C;
-    font-family: 'Neucha', cursive;
     color: #FCFAF2;
+}
+span p {
+    font-size: 18px;
 }
 hr {
     filter: alpha(opacity=100, finishopacity=0, style=3),
