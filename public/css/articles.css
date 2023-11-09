@@ -1,0 +1,41 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #080808;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.catalog {
+    width: 20%;
+    height: 100vh;
+    -webkit-box-shadow: -1px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: -1px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: -1px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.catalog h4 {
+    text-align: center;
+}
+
+.detail {
+    width: 75%;
+    height: 90vh;
+    overflow: auto;
+    padding: 10px;
+}
