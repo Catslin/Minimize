@@ -2,8 +2,11 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Kirang Haerang', cursive;
-    background-color: #939650;
-    color: #1c1c1c;
+    /* background-color: #939650; */
+    background-image: url('../image/backgroundImage.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #51A8DD;
 }
 a {
     text-decoration: none;
