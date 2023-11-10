@@ -48,8 +48,11 @@ a {
 
 .todolist {
     color: #66BAB7;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 14px;
+}
+.todolist span {
+    display: inline;
 }
 
 .toover {
