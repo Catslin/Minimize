@@ -45,3 +45,8 @@ a {
     border: 1px dotted;
     margin: 10px;
 }
+
+.toover {
+    text-decoration: line-through;
+    display: none;
+}

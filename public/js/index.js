@@ -1,26 +1,37 @@
 loadContent = (fileName, event) => {
-    fileName = fileName ? fileName : "./page/index.html";
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        document.querySelector(".show").innerHTML = this.responseText;
-      }
-    };
-    event.preventDefault();
-    xhttp.open("GET", fileName, true);
-    xhttp.send();
-  
-    // 存储当前加载的页面文件名
-    localStorage.setItem("currentPage", fileName);
+  fileName = fileName ? fileName : "./page/index.html";
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      document.querySelector(".show").innerHTML = this.responseText;
+    }
   };
-  
-  window.addEventListener('DOMContentLoaded', function(event) {
-    // 检查localStorage中是否有存储的页面文件名
-    var currentPage = localStorage.getItem("currentPage");
-  
-    if (currentPage) {
-      loadContent(currentPage, event);
+  event.preventDefault();
+  xhttp.open("GET", fileName, true);
+  xhttp.send();
+
+  // 存储当前加载的页面文件名
+  localStorage.setItem("currentPage", fileName);
+};
+
+window.addEventListener('DOMContentLoaded', function (event) {
+  // 检查localStorage中是否有存储的页面文件名
+  var currentPage = localStorage.getItem("currentPage");
+
+  if (currentPage) {
+    loadContent(currentPage, event);
+  } else {
+    loadContent('./page/index.html', event);
+  }
+});
+
+function showCompleted() {
+  var toOverItems = document.querySelectorAll('.toover');
+  toOverItems.forEach(function (item) {
+    if (item.style.display === 'none' || item.style.display === '') {
+      item.style.display = 'inline'; // 显示已完成的事项
     } else {
-      loadContent('./page/index.html', event);
+      item.style.display = 'none'; // 隐藏已完成的事项
     }
   });
+}
