@@ -28,6 +28,14 @@ a {
     -webkit-box-shadow: -1px 2px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: -1px 2px 5px 0px rgba(50, 50, 50, 0.75);
     box-shadow: -1px 2px 5px 0px rgba(50, 50, 50, 0.75);
+
+}
+.catalog a {
+    display: block; /* 将链接元素设置为块级元素 */
+    margin-bottom: 5px; /* 添加一些底部间距，使得链接之间有间隔 */
+  }
+.catalog * {
+    flex-wrap: wrap;
 }
 .catalog h4 {
     text-align: center;

@@ -15,67 +15,94 @@
   <body>
     <div class="catalog">
       <h4>Build your own React</h4>
-      <a href="">Step I: The createElement Function</a>
-      <a href="">Step II: The render Function</a>
-      <a href="">Step III: Concurrent Mode</a>
-      <a href="">Step IV: Fibers</a>
-      <a href="">Step V: Render and Commit Phases</a>
-      <a href="">Step VI: Reconciliation</a>
-      <a href="">Step VII: Function Components</a>
-      <a href="">Step VIII: Hooks</a>
+      <a href="">Step I:</a>
+      <a href="">Step II:</a>
+      <a href="">Step III:</a>
+      <a href="">Step IV:</a>
+      <a href="">Step V:</a>
+      <a href="">Step VI: </a>
+      <a href="">Step VII:</a>
+      <a href="">Step VIII:</a>
     </div>
     <div class="detail">
-      Step Zero: Review But first let’s review some basic concepts. You can skip <br>
-      this step if you already have a good idea of how React, JSX and DOM<br>
-      elements work. We’ll use this React app, just three lines of code. The<br>
-      first one defines a React element. The next one gets a node from the DOM.<br>
-      The last one renders the React element into the container. Let’s remove<br>
-      all the React specific code and replace it with vanilla JavaScript. On the<br>
-      first line we have the element, defined with JSX. It isn’t even valid<br>
-      JavaScript, so in order to replace it with vanilla JS, first we need to<br>
-      replace it with valid JS. JSX is transformed to JS by build tools like<br>
-      Babel. The transformation is usually simple: replace the code inside the<br>
-      tags with a call to createElement, passing the tag name, the props and the<br>
-      children as parameters. React.createElement creates an object from its<br>
-      arguments. Besides some validations, that’s all it does. So we can safely<br>
-      replace the function call with its output. And this is what an element is,<br>
-      an object with two properties: type and props (well, it has more, but we<br>
-      only care about these two). The type is a string that specifies the type<br>
-      of the DOM node we want to create, it’s the tagName you pass to<br>
-      document.createElement when you want to create an HTML element. It can<br>
-      also be a function, but we’ll leave that for Step VII. props is another<br>
-      object, it has all the keys and values from the JSX attributes. It also<br>
-      has a special property: children. children in this case is a string, but<br>
-      it’s usually an array with more elements. That’s why elements are also<br>
-      trees. The other piece of React code we need to replace is the call to<br>
-      ReactDOM.render. render is where React changes the DOM, so let’s do the<br>
-      updates ourselves. First we create a node* using the element type, in this<br>
-      case h1. Then we assign all the element props to that node. Here it’s just<br>
-      the title. * To avoid confusion, I’ll use “element” to refer to React<br>
-      elements and “node” for DOM elements. Then we create the nodes for the<br>
-      children. We only have a string as a child so we create a text node. Using<br>
-      textNode instead of setting innerText will allow us to treat all elements<br>
-      in the same way later. Note also how we set the nodeValue like we did it<br>
-      with the h1 title, it’s almost as if the string had props: {nodeValue:<br>
-      "hello"}.Step Zero: Review But first let’s review some basic concepts. You<br>
-      can skip this step if you already have a good idea of how React, JSX and<br>
-      DOM elements work. We’ll use this React app, just three lines of code. The<br>
-      first one defines a React element. The next one gets a node from the DOM.<br>
-      The last one renders the React element into the container. Let’s remove<br>
-      all the React specific code and replace it with vanilla JavaScript. On the<br>
-      first line we have the element, defined with JSX. It isn’t even valid<br>
-      JavaScript, so in order to replace it with vanilla JS, first we need to<br>
-      replace it with valid JS. JSX is transformed to JS by build tools like<br>
-      Babel. The transformation is usually simple: replace the code inside the<br>
-      tags with a call to createElement, passing the tag name, the props and the<br>
-      children as parameters. React.createElement creates an object from its<br>
-      arguments. Besides some validations, that’s all it does. So we can safely<br>
-      replace the function call with its output. And this is what an element is,<br>
-      an object with two properties: type and props (well, it has more, but we<br>
-      only care about these two). The type is a string that specifies the type<br>
-      in the same way later. Note also how we set the nodeValue like we did it<br>
-      with the h1 title, it’s almost as if the string had props: {nodeValue:<br>
-      "hello"}.<br>
+      Step Zero: Review But first let’s review some basic concepts. You can skip
+      <br />
+      this step if you already have a good idea of how React, JSX and DOM<br />
+      elements work. We’ll use this React app, just three lines of code. The<br />
+      first one defines a React element. The next one gets a node from the
+      DOM.<br />
+      The last one renders the React element into the container. Let’s remove<br />
+      all the React specific code and replace it with vanilla JavaScript. On
+      the<br />
+      first line we have the element, defined with JSX. It isn’t even valid<br />
+      JavaScript, so in order to replace it with vanilla JS, first we need to<br />
+      replace it with valid JS. JSX is transformed to JS by build tools like<br />
+      Babel. The transformation is usually simple: replace the code inside
+      the<br />
+      tags with a call to createElement, passing the tag name, the props and
+      the<br />
+      children as parameters. React.createElement creates an object from its<br />
+      arguments. Besides some validations, that’s all it does. So we can
+      safely<br />
+      replace the function call with its output. And this is what an element
+      is,<br />
+      an object with two properties: type and props (well, it has more, but
+      we<br />
+      only care about these two). The type is a string that specifies the
+      type<br />
+      of the DOM node we want to create, it’s the tagName you pass to<br />
+      document.createElement when you want to create an HTML element. It can<br />
+      also be a function, but we’ll leave that for Step VII. props is another<br />
+      object, it has all the keys and values from the JSX attributes. It also<br />
+      has a special property: children. children in this case is a string,
+      but<br />
+      it’s usually an array with more elements. That’s why elements are also<br />
+      trees. The other piece of React code we need to replace is the call to<br />
+      ReactDOM.render. render is where React changes the DOM, so let’s do the<br />
+      updates ourselves. First we create a node* using the element type, in
+      this<br />
+      case h1. Then we assign all the element props to that node. Here it’s
+      just<br />
+      the title. * To avoid confusion, I’ll use “element” to refer to React<br />
+      elements and “node” for DOM elements. Then we create the nodes for the<br />
+      children. We only have a string as a child so we create a text node.
+      Using<br />
+      textNode instead of setting innerText will allow us to treat all
+      elements<br />
+      in the same way later. Note also how we set the nodeValue like we did
+      it<br />
+      with the h1 title, it’s almost as if the string had props: {nodeValue:<br />
+      "hello"}.Step Zero: Review But first let’s review some basic concepts.
+      You<br />
+      can skip this step if you already have a good idea of how React, JSX
+      and<br />
+      DOM elements work. We’ll use this React app, just three lines of code.
+      The<br />
+      first one defines a React element. The next one gets a node from the
+      DOM.<br />
+      The last one renders the React element into the container. Let’s remove<br />
+      all the React specific code and replace it with vanilla JavaScript. On
+      the<br />
+      first line we have the element, defined with JSX. It isn’t even valid<br />
+      JavaScript, so in order to replace it with vanilla JS, first we need to<br />
+      replace it with valid JS. JSX is transformed to JS by build tools like<br />
+      Babel. The transformation is usually simple: replace the code inside
+      the<br />
+      tags with a call to createElement, passing the tag name, the props and
+      the<br />
+      children as parameters. React.createElement creates an object from its<br />
+      arguments. Besides some validations, that’s all it does. So we can
+      safely<br />
+      replace the function call with its output. And this is what an element
+      is,<br />
+      an object with two properties: type and props (well, it has more, but
+      we<br />
+      only care about these two). The type is a string that specifies the
+      type<br />
+      in the same way later. Note also how we set the nodeValue like we did
+      it<br />
+      with the h1 title, it’s almost as if the string had props: {nodeValue:<br />
+      "hello"}.<br />
     </div>
   </body>
 </html>
