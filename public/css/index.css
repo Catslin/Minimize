@@ -46,6 +46,12 @@ a {
     margin: 10px;
 }
 
+.todolist {
+    color: #66BAB7;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 14px;
+}
+
 .toover {
     text-decoration: line-through;
     display: none;
