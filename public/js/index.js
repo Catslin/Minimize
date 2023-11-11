@@ -21,6 +21,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
   if (currentPage) {
     loadContent(currentPage, event);
   } else {
+    // 当存储了文件名的时候加载文件内容，没有存储文件名则加载默认页
     loadContent('./page/index.html', event);
   }
 });
