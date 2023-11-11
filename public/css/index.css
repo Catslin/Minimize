@@ -2,10 +2,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Kirang Haerang', cursive;
-    /* background-color: #939650; */
-    background-image: url('../image/backgroundImage.jpg');
-    background-position: center;
-    background-size: cover;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     color: #51A8DD;
 }
 a {
