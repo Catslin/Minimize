@@ -25,14 +25,3 @@ window.addEventListener('DOMContentLoaded', function (event) {
     loadContent('./page/index.html', event);
   }
 });
-
-function showCompleted() {
-  var toOverItems = document.querySelectorAll('.toover');
-  toOverItems.forEach(function (item) {
-    if (item.style.display === 'none' || item.style.display === '') {
-      item.style.display = 'inline'; // 显示已完成的事项
-    } else {
-      item.style.display = 'none'; // 隐藏已完成的事项
-    }
-  });
-}
