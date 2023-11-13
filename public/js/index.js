@@ -1,9 +1,9 @@
 loadContent = (fileName, event) => {
-  fileName = fileName ? fileName : "./page/index.html";
+  fileName = fileName ? fileName : defaultPath;
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      document.querySelector(".show").innerHTML = this.responseText;
+      document.querySelector(element).innerHTML = this.responseText;
     }
   };
   event.preventDefault();
@@ -22,6 +22,6 @@ window.addEventListener('DOMContentLoaded', function (event) {
     loadContent(currentPage, event);
   } else {
     // 当存储了文件名的时候加载文件内容，没有存储文件名则加载默认页
-    loadContent('./page/index.html', event);
+    loadContent(defaultPath, event);
   }
 });

@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+
+.container {
+    width: 95%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.tags {
+    width: 20%;
+    height: 100vh;
+    overflow: auto;
+}
+.tags::-webkit-scrollbar {
+    width: 3px;
+}
+.tags::-webkit-scrollbar-thumb {
+    background: #080808;
+}
+.tags a {
+    margin: 20px;
+    display: block;
+}
+
+.context {
+    width: 80%;
+    height: 100vh;
+    overflow: auto;
+    padding: 20px;
+}
