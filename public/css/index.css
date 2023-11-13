@@ -2,15 +2,12 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Kirang Haerang', cursive;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    color: #51A8DD;
 }
 a {
+    color: #CB1B45;
     text-decoration: none;
 }
-ul li {
-    margin-bottom: 10px;
-}
+
 ::-webkit-scrollbar {
     width: 3px;
 }
@@ -44,18 +41,4 @@ ul li {
     padding: 10px;
     border: 1px dotted;
     margin: 10px;
-}
-
-.todolist {
-    color: #66BAB7;
-    font-family: 'Do Hyeon', sans-serif;
-    font-size: 14px;
-}
-.todolist span {
-    display: inline;
-}
-
-.toover {
-    text-decoration: line-through;
-    display: none;
 }
