@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: 'Kirang Haerang', cursive;
 }
+
 a {
     color: #CB1B45;
     text-decoration: none;
@@ -19,17 +20,20 @@ p {
 ::-webkit-scrollbar-thumb {
     background: #080808;
 }
+
 .container {
     width: 90%;
     height: 100vh;
     margin: auto;
     overflow: hidden;
 }
+
 .nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
+
 .nav * {
     margin-right: 10px;
 }
@@ -45,4 +49,9 @@ p {
     padding: 10px;
     border: 1px dotted;
     margin: 10px;
+}
+
+.link-str {
+    font-size: 30px;
+    text-align: center;
 }

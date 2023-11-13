@@ -33,7 +33,7 @@ a {
 }
 
 .context {
-    width: 80%;
+    flex: 1;
     height: 100vh;
     overflow: auto;
     padding: 20px;
