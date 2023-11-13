@@ -8,6 +8,9 @@ body {
 a {
     text-decoration: none;
 }
+ul li {
+    margin-bottom: 10px;
+}
 ::-webkit-scrollbar {
     width: 3px;
 }
