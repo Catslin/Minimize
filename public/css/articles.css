@@ -20,6 +20,7 @@ a {
     width: 20%;
     height: 100vh;
     overflow: auto;
+    font-family: 'Teko', sans-serif;
 }
 .tags::-webkit-scrollbar {
     width: 3px;
@@ -37,4 +38,5 @@ a {
     height: 100vh;
     overflow: auto;
     padding: 20px;
+    font-family: 'Economica', sans-serif;
 }
