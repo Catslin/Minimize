@@ -56,10 +56,14 @@ p {
 }
 
 .tagshow {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    display: inline-block;
 }
+
+.tagshow::-webkit-scrollbar {
+    height: 1px;
+}
+
 .tagshow a {
+    white-space: nowrap;
     margin-right: 20px;
 }
