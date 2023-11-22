@@ -1,0 +1,33 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-size: 18px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+.bkimage {
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+}
+
+.container {
+    width: 70%;
+    height: 90vh;
+    margin: auto;
+    overflow: auto;
+}
+
+.card {
+    margin: 10px;
+    background-color: whitesmoke;
+}
